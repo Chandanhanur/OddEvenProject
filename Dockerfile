@@ -9,7 +9,7 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 
 # Copy executable jar built by Maven
-COPY target/even-odd-app-1.0.0.jar app.jar
+COPY target/*.jar app.jar
 
 # Application entry point
 ENTRYPOINT ["java", "-jar", "app.jar"]

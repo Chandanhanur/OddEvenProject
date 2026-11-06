@@ -68,14 +68,14 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          username: chanda142425
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Extract Docker metadata (Tags & Labels)
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/even-odd-app
+          images: chanda142425/even-odd-app
           tags: |
             type=raw,value=latest
             type=sha,format=short
