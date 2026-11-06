@@ -1,0 +1,15 @@
+.git
+.github
+.gitignore
+Dockerfile
+.dockerignore
+.idea/
+*.iml
+.vscode/
+target/classes/
+target/test-classes/
+target/generated-sources/
+target/maven-status/
+target/surefire-reports/
+target/*.log
+
