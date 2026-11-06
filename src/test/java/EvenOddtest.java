@@ -11,7 +11,7 @@ public class EvenOddtest {
     @Test
     @DisplayName("Test positive even number")
     void testEvenNumber() {
-        assertTrue(EvenOdd.isEven(5), "Intentional failure: 5 is not even!");
+       assertTrue(EvenOdd.isEven(5), "Intentional failure: 5 is not even!");
         assertFalse(EvenOdd.isOdd(4), "4 should not be odd");
         assertEquals("Even", EvenOdd.check(4));
     }
